@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Bahnschrift SemiBold;
+}
+
+body {
+    background-color: #0d233a;
+}
+
+#messages {
+    /* CAMPO DE MENSAGENS */
+    background-color: #133457;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden scroll;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#message_form {
+    /* enviar */
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background-color: #3A5470;
+    bottom: 0;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#message_form>button {
+    /* botao enviar */
+    width: 5%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #0d233a;
+    border-right: 4px solid #0d233a;
+    border-left: 1px solid #0d233a27;
+    color: #cdcdcd;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    &:hover {
+        background-color: #315172;
+    }
+}
+
+#message_form>textarea {
+    /* input */
+    width: 95%;
+    background-color: #557BA3;
+    border: none;
+    height: 60%;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    position: relative;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: #cdcdcd;
+    }
+}
+
+ul {
+    /* width: 78%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    /* border: 1px solid;
+    /* border: 1px solid; */
+}
+
+.message {
+    /* MENSAGENS DOS USUÁRIOS */
+    color: #f2bf33;
+    font-size: 1.1em;
+    background-color: #3A5470;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 10px;
+    width: max-content;
+    max-width: 50%;
+    min-width: 100px;
+    word-break: break-word;
+}
+
+li>span {
+    /* MENSAGENS DOS USUÁRIOS */
+    color: #cdcdcd;
+}
+
+#user_form {
+    /* USUÁRIO */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#user_form>button {
+    /* USUÁRIO */
+    width: 100px;
+    background-color: #557BA3;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#time {
+    /* Horário */
+    font-size: 7pt;
+    position: relative;
+    color: #cdcdcd;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+input {
+    background-color: #f2bf33;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #000;
+}
+
+input::placeholder {
+    text-align: center;
+    color: #133457;
+}
+
+input:focus {
+    border: 1px solid #f2bf33;
+    box-shadow: 2px 2px 1px #000;
+    outline: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #f2bf33 inset !important;
+    -webkit-text-fill-color: #000;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    background-color: #133457;
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f2bf33;
+}
