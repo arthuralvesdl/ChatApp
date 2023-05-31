@@ -11,7 +11,7 @@ body {
 
 #messages {
     /* CAMPO DE MENSAGENS */
-    background-color: #133457;
+    background-color: #1d262c;
     width: 100%;
     height: 90vh;
     overflow: hidden scroll;
@@ -27,7 +27,7 @@ body {
     position: absolute;
     width: 100%;
     height: 10%;
-    background-color: #22405f;
+    background-color: #222c33;
     bottom: 0;
     margin: 0;
     padding: 10px;
@@ -40,13 +40,13 @@ body {
 
 #message_form>button {
     /* botao enviar */
-    width: 10%;
+    width: 7%;
     height: 100%;
     background-color: transparent;
     border: none;
-    border-bottom: 4px solid #0d233a;
-    border-right: 4px solid #0d233a;
-    border-left: 1px solid #0d233a27;
+    border-bottom: 3px solid #344450b7;
+    border-right: 3px solid #344450b7;
+    border-left: 1px solid #3444503a;
     color: #cdcdcd;
     border-radius: 10px;
     position: relative;
@@ -55,14 +55,17 @@ body {
     margin-left: 10px;
 
     &:hover {
-        background-color: #315172;
+        background-color: #2b3841;
+        border-bottom: 3px solid #344450;
+        border-right: 3px solid #344450;
+        border-left: 1px solid #3444503a;
     }
 }
 
 #message_form>textarea {
     /* input */
     width: 95%;
-    background-color: #557BA3;
+    background-color: #344450b7;
     border: none;
     height: 60%;
     margin: 0;
@@ -86,16 +89,15 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    /* border: 1px solid;
-    /* border: 1px solid; */
 }
 
 .message {
     /* MENSAGENS DOS USUÁRIOS */
-    color: #f2bf33;
+    color: #f3c853;
     font-size: 1.1em;
-    background-color: #3A5470;
-    border-radius: 10px;
+    background-color: #222c33;
+    border: 1px solid #2a363f;
+    border-radius: 5px;
     padding: 10px;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -108,7 +110,7 @@ ul {
 
 li>span {
     /* MENSAGENS DOS USUÁRIOS */
-    color: #cdcdcd;
+    color: #cfdde7;
 }
 
 #user_form {
@@ -135,10 +137,10 @@ li>span {
 }
 
 #time {
-    /* Horário */
-    font-size: 7pt;
+    /* HORÁRIO */
+    font-size: 7.5pt;
     position: relative;
-    color: #cdcdcd;
+    color: #6a7c8a;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -155,7 +157,7 @@ input {
 
 input::placeholder {
     text-align: center;
-    color: #133457;
+    color: #292929;
 }
 
 input:focus {
@@ -180,7 +182,7 @@ input::-webkit-inner-spin-button {
 }
 
 ::-webkit-scrollbar {
-    background-color: #133457;
+    background-color: #292929;
     width: 8px;
     height: 8px;
 }
